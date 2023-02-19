@@ -2,7 +2,7 @@
 import typer
 
 from nb_cli.cli import console
-from nb_cli.system import SystemProperties
+from nb_cli.system import system_properties
 
 system_app = typer.Typer()
 
@@ -11,4 +11,4 @@ system_app = typer.Typer()
 def properties() -> None:
     """Display system properties."""
     console.print("System properties")
-    SystemProperties()
+    system_properties()

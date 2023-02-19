@@ -1,8 +1,9 @@
-"""System properties"""
+"""System properties."""
 import platform
 
 
-def SystemProperties():
+def system_properties():
+    """System properties."""
     # Get system info
     system_info = platform.uname()
 
