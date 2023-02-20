@@ -2,11 +2,11 @@
 import typer
 
 from nb_cli.cli import console
-
 # Functions
 from nb_cli.system.fcn.info import system_info
 
 system_app = typer.Typer()
+
 
 # Commands
 @system_app.command()
