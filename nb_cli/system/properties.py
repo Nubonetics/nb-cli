@@ -1,6 +1,8 @@
 """System properties."""
 import platform
 
+from rich.table import Table
+
 
 def system_properties() -> str:
     """System properties."""
@@ -17,8 +19,9 @@ def system_properties() -> str:
         ["Processor", system_info.processor],
     ]
 
-    # Return the table
-    output_table="System Properties:\n"
+    table = Table("Property", "Value", title="System Properties")
+
     for row in table_data:
-        output_table+=f"{row[0]:20} : {row[1]}\n"
-    return output_table
+        table.add_row(*row)
+
+    return table
