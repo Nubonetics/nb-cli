@@ -5,4 +5,5 @@ from nb_cli.system.app import system_app
 app.add_typer(system_app, name="system")
 
 if __name__ == "__main__":
+    print("test")
     app()

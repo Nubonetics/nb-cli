@@ -2,7 +2,7 @@ install:
 	poetry install
 
 run:
-	poetry run nb-cli system --help
+	poetry run nbcli system --help
 
 pre-commit:
 	nox -s pre-commit

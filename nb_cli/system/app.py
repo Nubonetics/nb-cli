@@ -2,7 +2,7 @@
 import typer
 
 from nb_cli.cli import console
-from nb_cli.system import system_properties
+from nb_cli.system.properties import system_properties
 
 system_app = typer.Typer()
 

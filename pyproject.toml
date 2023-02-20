@@ -11,6 +11,8 @@ python = "^3.10"
 typer = "^0.7.0"
 rich = "^13.3.1"
 
+[tool.poetry.scripts]
+nb = "nb_cli.__main__:app"
 
 [tool.poetry.group.dev.dependencies]
 nox-poetry = "^1.0.2"
