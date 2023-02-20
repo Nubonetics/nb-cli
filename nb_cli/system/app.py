@@ -10,5 +10,4 @@ system_app = typer.Typer()
 @system_app.command()
 def properties() -> None:
     """Display system properties."""
-    console.print("System properties")
-    system_properties()
+    console.print(system_properties())

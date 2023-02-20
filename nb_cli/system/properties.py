@@ -2,7 +2,7 @@
 import platform
 
 
-def system_properties():
+def system_properties() -> str:
     """System properties."""
     # Get system info
     system_info = platform.uname()
@@ -17,7 +17,8 @@ def system_properties():
         ["Processor", system_info.processor],
     ]
 
-    # Output the table
-    print("System Properties:")
+    # Return the table
+    output_table="System Properties:\n"
     for row in table_data:
-        print(f"{row[0]:20} : {row[1]}")
+        output_table+=f"{row[0]:20} : {row[1]}\n"
+    return output_table
